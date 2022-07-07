@@ -1,0 +1,166 @@
+:root {
+    --white-ff: #fff;
+    --white-fc: #fcfcfc;
+    --gray: #f2f2f2;
+    --blue-disabled: #98cbfd;
+    --blue-active: #0381fe;
+    --border-bottom: #8c8c8c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--white);
+}
+
+header .logo {
+    max-width: 1164px;
+    margin: 0 auto;
+    margin: 36px 24px 29px 24px;
+    
+}
+
+header .logo img {
+}
+
+main {
+    background-color: var(--gray);
+    padding-top: 48px;
+}
+
+main .container {
+   max-width: 640px;
+   padding: 60px 72px 60px 72px;
+   margin: 0 auto;
+   background-color: var(--white-fc);
+   border-radius: 26px;
+}
+
+main .container .title {
+    margin: 12px auto 55px auto;
+    font-size: 27px;
+    font-weight: 500;
+}
+
+main .container .content {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+
+main .container .content .login-form {
+    
+}
+
+.login-form form {
+
+}
+
+.login-form form .id-form {
+    
+}
+/* input email */
+.id-form .input-email {
+    display: block;
+    position: relative;
+}
+
+.id-form .input-email > label {
+    position: absolute;
+    top: -1px;
+    left: auto;
+    max-width: 100%;
+    height: 2.7em;
+    line-height: 1.33;
+    color: #909090;
+    font-size: 18px;
+    cursor: text;
+    overflow: hidden;
+    transition: all .2s;
+    transform-origin: left top;
+}
+
+.id-form .input-email > input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--border-bottom);
+    color: #909090;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.id-form .input-email > input:focus-visible {
+    outline: none;
+   
+}
+
+.error-msg {
+
+}
+
+
+.login-form form .signin {
+    
+}
+/* nút tiếp*/
+.login-form form .signin .button-next {
+    
+}
+
+.login-form form .signin .button-next .next {
+    
+}
+/* tìm id, tạo tài khoản */
+.login-form form .signin .sub {
+    list-style: none;
+}
+
+.login-form form .signin .sub li {
+    
+}
+
+.login-form form .signin .sub li a {
+    text-decoration: none;
+}
+/* nút google */
+.login-form form .btn-google {
+    
+}
+
+.login-form form .btn-google > button {
+    
+}
+/* nút qr */
+.login-form form .btn-qr {
+    
+}
+
+.login-form form .btn-qr > button{
+    
+}
+
+
+/* responsive */
+/* pc */
+@media (min-width: 1024px) {
+
+}
+
+
+/* tablet */
+@media (min-width: 741px) and (max-width: 1023px) {
+
+} 
+
+/* mobile */
+@media (max-width: 740px) {
+
+} 

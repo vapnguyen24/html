@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Testimonials</h1>
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+                <div class="slide-row" id="slide">
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, nulla tempora itaque ducimus repellendus quis incidunt. Eius eaque non alias necessitatibus ipsum ullam enim, ducimus esse totam quae aut possimus.
+                            </p>
+                            <h3>Sarah</h3>
+                            <p>Zara Inc.</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="images/banner1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, nulla tempora itaque ducimus repellendus quis incidunt. Eius eaque non alias necessitatibus ipsum ullam enim, ducimus esse totam quae aut possimus.
+                            </p>
+                            <h3>Angel</h3>
+                            <p>Zara Inc.</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="images/banner2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slide-col">
+                        <div class="user-text">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, nulla tempora itaque ducimus repellendus quis incidunt. Eius eaque non alias necessitatibus ipsum ullam enim, ducimus esse totam quae aut possimus.
+                            </p>
+                            <h3>Bancot</h3>
+                            <p>Zara Inc.</p>
+                        </div>
+                        <div class="user-img">
+                            <img src="images/banner3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide");
+
+        btn[0].onclick = function() {
+            slide.style.transform = "translateX(0px)";
+            for(i = 0; i < 3; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active")
+        }
+
+        btn[1].onclick = function() {
+            slide.style.transform = "translateX(-800px)";
+            for(i = 0; i < 3; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active")
+        }
+
+        btn[2].onclick = function() {
+            slide.style.transform = "translateX(-1600px)";
+            for(i = 0; i < 3; i++) {
+                btn[i].classList.remove("active");
+            }
+            this.classList.add("active")
+        }
+    </script>
+</body>
+</html>
