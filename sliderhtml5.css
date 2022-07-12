@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 30px;
+    font-size: 34px;
+    line-height: 1.47;
+    font-weight: 700;
+    text-align: center;
+}
+
+section.phone-product .item-wrapper {
+    max-width: 713px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+section.phone-product  .title-list {
+    display: flex;
+    justify-content: center;
+}
+
+section.phone-product .title-list .btn-slide {
+    margin: 15px 15px 30px 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.item-wrapper .body-item{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.body-item  .slide-row{
+    display: flex;
+    width: calc(713px * 4);
+    transition: .5s;
+}
+
+
+.body-item  .slide-row .slide-col {
+    max-width: 713px;
+    height: 418px;
+}
+
+
+
+
+.slide-col .item-img img{
+    height: 100%;
+    width: 713px;
+    width: 100%;
+}
+
+.slide-col h4 {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.slide-col .sub-title {
+    text-align: center;
+    font-size: 17px;
+    margin-top: 8px;
+    font-weight: 500;
+
+}
+
+.slide-col .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.slide-col .button .btn-find-more {
+    margin: 16px;
+    
+}
+.slide-col .button .btn-buy {
+    margin: 16px;
+    color: #fff;
+    background-color: black;
+    padding: 8px 20px;
+    border-radius: 45px;
+}
+
+.slide-col .button .btn-buy:hover {
+    color: #eee !important;
+    background-color: #555 !important;
+}
+
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 741px) and (max-width: 1023px) {
+    section.phone-product .title-list .btn-slide {
+        margin: 15px 8px 30px 8px;
+
+    }
+
+}
+
+@media (max-width: 740px) {
+
+    section.phone-product .title-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 8px;
+    }
+
+    section.phone-product .title-list .btn-slide {
+        margin: 16px;
+        text-align: center;
+    }
+
+    section.phone-product .item-wrapper {
+        max-width: 100%;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .item-wrapper .body-item{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+
+    .body-item .slide-row {
+        display: flex;
+        width: 400%;
+        transition: .5s;
+    }
+
+    .body-item  .slide-row .slide-col {
+        max-width: 100%;
+        height: 418px;
+    }
+
+    .slide-col h4 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+}
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sliderhtml5.css">
+</head>
+<body>
+    <div class="container">
+        <section class="phone-product">
+            <h1>Di Động</h1>
+            <ul class="title-list">
+                <li class="btn-slide">Galaxy S22 | S22+</li>
+                <li class="btn-slide">Galaxy A53 5G</li>
+                <li class="btn-slide">Galaxy Z Fold | Flip 3</li>
+                <li class="btn-slide">Galaxy S21 FE 5G</li>
+            </ul>
+            <div class="item-wrapper">
+                <div class="body-item">
+                    <div class="slide-row" id="slide">
+                        <div class="slide-col">
+                            <div class="item-img">
+                                <img src="images/galaxyS22.webp" alt="">
+                            </div>
+                            <h4 class="title-item">Galaxy S22 | S22+</h4>
+                            <h5 class="sub-title">Thu cũ đổi mới giá chỉ từ 3,130,000đ</h5>
+                            <div class="button">
+                                <div class="btn-find-more">Tìm hiểu thêm</div>
+                                <div class="btn-buy">Mua ngay</div>
+                            </div>
+                        </div>
+
+                        <div class="slide-col">
+                            <div class="item-img">
+                                <img src="https://images.samsung.com/is/image/samsung/assets/vn/2203/home/HOME_IM_KV_PC_B_743X418.jpg?$743_418_PNG$" alt="">
+                            </div>
+                            <h4 class="title-item">Galaxy A53 5G</h4>
+                            <h5 class="sub-title">Thu cũ đổi mới giá chỉ từ 4,120,000đ</h5>
+                            <div class="button">
+                                <div class="btn-find-more">Tìm hiểu thêm</div>
+                                <div class="btn-buy">Mua ngay</div>
+                            </div>
+                        </div>
+
+                       
+
+                        <div class="slide-col">
+                            <div class="item-img">
+                                <img src="https://images.samsung.com/is/image/samsung/assets/vn/home/2021/Home_Foldable_KV_IM-KV_743X418_pc.jpg?$743_418_PNG$" alt="">
+                            </div>
+                            <h4 class="title-item">Galaxy Z Fold | Flip 3</h4>
+                            <h5 class="sub-title">Thu cũ đổi mới giá chỉ từ 18,130,000đ</h5>
+                            <div class="button">
+                                <div class="btn-find-more">Tìm hiểu thêm</div>
+                                <div class="btn-buy">Mua ngay</div>
+                            </div>
+                        </div>
+
+                        <div class="slide-col">
+                            <div class="item-img">
+                                <img src="https://images.samsung.com/is/image/samsung/assets/vn/home/2022/invitation/Home_Galaxy-S21-FE_KV_IM-KV_743X418.jpg?$743_418_PNG$" alt="">
+                            </div>
+                            <h4 class="title-item">Galaxy S21 FE 5G</h4>
+                            <h5 class="sub-title">Thu cũ đổi mới giá chỉ từ 2,640,000đ</h5>
+                            <div class="button">
+                                <div class="btn-find-more">Tìm hiểu thêm</div>
+                                <div class="btn-buy">Mua ngay</div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        var btn = document.getElementsByClassName("btn-slide");
+        var slide = document.getElementById("slide");
+        console.log(slide.clientWidth)
+        btn[0].onclick = function() {
+            slide.style.transform = "translateX(0px)";
+            // for(i = 0; i < 5; i++) {
+            //     btn[i].classList.remove("active");
+            // }
+            // this.classList.add("active")
+        }
+
+        btn[1].onclick = function() {
+            slide.style.transform = "translateX(" + (-slide.clientWidth/4)+ "px)";
+            // for(i = 0; i < 5; i++) {
+            //     btn[i].classList.remove("active");
+            // }
+            // this.classList.add("active")
+        }
+
+        btn[2].onclick = function() {
+            slide.style.transform = "translateX(" + (-slide.clientWidth/2) + "px)";
+            // for(i = 0; i < 5; i++) {
+            //     btn[i].classList.remove("active");
+            // }
+            // this.classList.add("active")
+        }
+
+        btn[3].onclick = function() {
+            slide.style.transform = "translateX(" + ((-slide.clientWidth/1) - (-slide.clientWidth/4)) + "px)";
+            // for(i = 0; i < 5; i++) {
+            //     btn[i].classList.remove("active");
+            // }
+            // this.classList.add("active")
+        }
+
+       
+
+        
+    </script>
+</body>
+</html>
